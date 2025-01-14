@@ -71,9 +71,9 @@ Make sure you have the following installed on your system:
    ```json
    [
      {
-     	status: 200,
-     	message: "Get all tasks successfully..",
-     	data: {
+     	"status": 200,
+     	"message": "Get all tasks successfully..",
+     	"data": {
        "_id": "64fdc4f8f4a3a4000f123456",
        "title": "Sample Task",
        "description": "This is a sample task.",
@@ -96,9 +96,9 @@ Make sure you have the following installed on your system:
    - **Response**:
      ```json
      {
-     	status: 200,
-     	message: "New task added successfully.",
-     	data: {
+     	"status": 201,
+     	"message": "New task added successfully.",
+     	"data": {
        "_id": "64fdc4f8f4a3a4000f123457",
        "title": "New Task",
        "description": "Description of the task",
@@ -121,9 +121,9 @@ Make sure you have the following installed on your system:
    - **Response**:
      ```json
      {
-     	status: 200,
-     	message: "Task updated successfully",
-     	data: {
+     	"status": 200,
+     	"message": "Task updated successfully",
+     	"data": {
        "_id": "64fdc4f8f4a3a4000f123457",
        "title": "Updated Task Title",
        "description": "Updated Description",
@@ -138,7 +138,9 @@ Make sure you have the following installed on your system:
    - **Response**:
      ```json
      {
-       "message": "Task deleted successfully."
+      "status": 200,
+     	"message": "Task deleted successfully.",
+     	"data": "64fdc4f8f4a3a4000f123457"
      }
      ```
 ---
